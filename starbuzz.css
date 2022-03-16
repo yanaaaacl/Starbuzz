@@ -10,12 +10,17 @@ body { background-color: #b5a789;
 #main { background: #efe5d0 url(images/background.gif) top left;
         font-size: 105%;
         padding: 15px;
-        margin: 0px 10px 10px 10px;
+        margin: 0px 330px 10px 10px;
+       
 }
 #sidebar { background: #efe5d0 url(images/background.gif) bottom right;
            font-size: 105%;
            padding: 15px;
            margin: 0px 10px 10px 10px;
+           position: absolute;
+           top: 128px;
+           right: 0px;
+           width: 280px;
 }
 #footer { background-color: #675c47;
           color: #efe5d0;
@@ -23,6 +28,7 @@ body { background-color: #b5a789;
           padding: 15px;
           margin: 10px;
           font-size: 90%;
+          
 }
 h1 { font-size: 120%;
      color: #954b4b;
@@ -39,4 +45,12 @@ a:link { color: #b76666;
 a:visited { color: #675c47;
             text-decoration: none;
             border-bottom: thin dotted #675c47;
+}
+#allcontent {
+              width: 800px;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              background-color: #675c47;
+              margin-left: auto;
+              margin-right: auto;
 }
