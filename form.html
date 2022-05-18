@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Заказ напитков онлайн</title>
+    </head>
+    <body>
+        <form>
+            <p>
+                Выберите кофе: 
+                <select name="characters">
+                    <option value="Домашнее">Домашняя смесь</option>
+                    <option value="Боливия">Боливия</option>
+                    <option value="Гватемала">Гватемала</option>
+                    <option value="Кения">Кения</option>
+                </select> <br>
+                Тип: <input type="radio" name="молотыйвзернах" 
+                value="в зернах">
+                <input type="radio" name="молотыйвзернах" value="молотый">
+                <br>
+                Количество пакетиков: <input type="range" min="0" max="20" step="1"> <br>
+                Доставить к указанной дате: <input type="date"> <br>
+                Дополнительные услуги: 
+                <input type="checkbox" name="услуга" value="подарочная упаковка">
+                <input type="checkbox" name="услуга" value="доставка каталога вместе с заказом">
+                <br>
+                Доставить по адресу
+                Имя: <input type="text" name="firstname" value=""> <br>
+                Адрес: <input type="text" name="adress" value=""> <br>
+                Город: <input type="text" name="city" value=""> <br>
+                Страна: <input type="text"  name="country" value=""> <br>
+                Почтовый индекс: <input type="text" name="index" value=""> <br>
+                Телефон: <input type="tel" name="phone" value=""> <br>
+                Коментарии клиентов: <textarea name="comments" rows="10" cols="48"></textarea><br>
+                <input type="submit">
+
+            </p>
+        </form>
+    </body>
+</html>
