@@ -6,35 +6,47 @@
     <body>
         <h1>Starbuzz Bean Machine</h1>
         <h2>Заполните форму и нажмите кнопку "заказать сейчас", чтобы сделать заказ</h2>
+        <p>
         <form action="http://starbuzzcoffee.com/processorder.php" method="POST">
             <p>
                 Выберите кофе: 
-                <select name="characters">
+                <select name="beans">
                     <option value="Домашнее">Домашняя смесь</option>
                     <option value="Боливия">Боливия</option>
                     <option value="Гватемала">Гватемала</option>
                     <option value="Кения">Кения</option>
-                </select> <br>
-                Тип: <input type="radio" name="молотыйвзернах" 
-                value="в зернах">
-                <input type="radio" name="молотыйвзернах" value="молотый">
-                <br>
-                Количество пакетиков: <input type="range" min="0" max="20" step="1"> <br>
-                Доставить к указанной дате: <input type="date"> <br>
+                </select> 
+                </p>
+                <p>
+                Тип:<br>
+                 <input type="radio" name="beantype" 
+                value="зерна">Кофе в зернах<br>
+                <input type="radio" name="beantype" value="молотый">Молотый кофе
+                 </p>
+                 <p>
+                Количество пакетиков: <input type="number" name="bags" min="1" max="10"> 
+                </p>
+                <p>
+                Доставить к указанной дате: <input type="date" name="date"> 
+                </p>
+                <p>
                 Дополнительные услуги: 
                 <input type="checkbox" name="услуга" value="подарочная упаковка">
                 <input type="checkbox" name="услуга" value="доставка каталога вместе с заказом">
-                <br>
+                 </p>
+                <p>
                 Доставить по адресу <br>
-                Имя: <input type="text" name="name" > <br>
-                Адрес: <input type="text" name="address" > <br>
-                Город: <input type="text" name="city" > <br>
-                Страна: <input type="text"  name="state" > <br>
-                Почтовый индекс: <input type="text" name="zip"> <br>
-                Телефон: <input type="tel" name="phone" > <br>
+                Имя: <input type="text" name="name" value=""> <br>
+                Адрес: <input type="text" name="address" value=""> <br>
+                Город: <input type="text" name="city" value=""> <br>
+                Страна: <input type="text"  name="state" value=""> <br>
+                Почтовый индекс: <input type="text" name="zip" value=""> <br>
+                Телефон: <input type="tel" name="phone" value=""> <br>
+            </p>
                 Коментарии клиентов: <textarea name="comments" rows="10" cols="48"></textarea><br>
+                <p>
                 <input type="submit" value="Заказать сейчас">
-
+            </p>
             </p>
         </form>
     </body>
